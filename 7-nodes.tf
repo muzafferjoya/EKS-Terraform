@@ -52,11 +52,11 @@ resource "aws_eks_node_group" "private_nodes" {
   }
 
    tags = {
-    Name = "sbed-services"
+    Name = "demo-inst"
   }
 
   labels = {
-    role = "sbed"
+    role = "demo"
   }
 
   depends_on = [
@@ -90,11 +90,11 @@ resource "aws_eks_node_group" "large_nodes" {
   }
 
   tags = {
-    Name = "sbed"
+    Name = "demo-inst"
   }
 
    labels = {
-    role = "sb"  
+    role = "demo"  
   }
 
   depends_on = [
