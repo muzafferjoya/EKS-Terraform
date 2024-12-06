@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 variable "cluster_name" {
-  default = "Sunbird-ed"
+  default = "demo"
 }
 
 variable "cluster_version" {
-  default = "1.29"
+  default = "1.31"
 }
 
 
